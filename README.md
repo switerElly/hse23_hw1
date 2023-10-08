@@ -65,7 +65,7 @@ time platanus gap_close -o Poil -c Poil_scaffold.fa -IP1 S1.fastq.trimmed S2.fas
 scp -i bioinf -P 5222 aavarfolomeeva@89.175.46.92:~/multiqc/multiqc_report.html .
 ```
 
-### Записываю в отдельный файл последовательность самого длинного скаффолда
+### Записываю в отдельный файл последовательность самого длинного скаффолда до подрезания
 
 ```bash
 more Poil_scaffold.fa
@@ -73,7 +73,7 @@ echo scaffold1_len3833690_cov231 > tmp2.txt
 seqtk subseq Poil_scaffold.fa tmp2.txt > scaf_long.fasta
 ```
 
-### Записываю в отдельный файл последовательность самого длинного скаффолда
+### Записываю в отдельный файл последовательность самого длинного скаффолда после подрезания
 
 ```bash
 more Poil_gapClosed.fa

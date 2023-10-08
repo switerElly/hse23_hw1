@@ -199,6 +199,6 @@ print(f'Общая длина гэпов после подрезания: {sm}')
 ![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/imges/Screenshot%20from%202023-10-08%2017-41-38.png)
 
 ## для урезанных чтений
-![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/imges/Screenshot%20from%202023-10-08%2017-41-38.png)
+![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/imges/Screenshot%20from%202023-10-08%2017-43-13.png)
 ![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/imges/Screenshot%20from%202023-10-08%2017-41-38.png)
 ![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/imges/Screenshot%20from%202023-10-08%2017-41-38.png)

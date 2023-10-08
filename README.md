@@ -191,7 +191,14 @@ print(f'Общая длина гэпов после подрезания: {sm}')
 
 ## Отчеты из Multiqc
 
+##### У меня немного поломался отчет, так как изначальные файлы, с которыми я работала не до конца проанализировались, и я запистила все на новых. Поэтому то, что нас интересует это S1, S2, M1, M2, остальные не нужны.
+
 ## для исходных чтений
-![Image alt](https://github.com/{username}/{repository}/raw/{branch}/{path}/image.png)
+![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/imges/Screenshot%20from%202023-10-08%2017-41-38.png)
+![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/imges/Screenshot%20from%202023-10-08%2017-41-38.png)
+![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/imges/Screenshot%20from%202023-10-08%2017-41-38.png)
 
 ## для урезанных чтений
+![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/imges/Screenshot%20from%202023-10-08%2017-41-38.png)
+![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/imges/Screenshot%20from%202023-10-08%2017-41-38.png)
+![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/imges/Screenshot%20from%202023-10-08%2017-41-38.png)

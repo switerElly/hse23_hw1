@@ -205,3 +205,135 @@ print(f'Общая длина гэпов после подрезания: {sm}')
 ![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/imges/Screenshot%20from%202023-10-08%2017-43-13.png)
 ![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/imges/fastqc_adapter_content_plot%20(2).png)
 ![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/imges/fastqc_per_sequence_quality_scores_plot%20(2).png)
+
+
+## Бонусная часть
+
+##### Здесь будет 3.5 миллионов чтений типа paired-end и 1.1 миллиона чтений типа mate-pairs
+
+##### Часть с работой в терминале та же, только меняем название файлов на 1s и pm
+
+## Часть с кодом
+
+### Контиги
+
+```bash
+f = open("Poil_contig.fa")
+a = f.readlines()
+n = ln = 0
+lng = int(a[0][a[0].find('len') + 3:a[0].rfind('_')])
+lst = []
+for i in a:
+    if '>' in i:
+        n += 1
+        ln += int(i[i.find('len') + 3:i.rfind('_')])
+        ltmp = int(i[i.find('len') + 3:i.rfind('_')])
+        lst.append(ltmp)
+        if ltmp > lng:
+          lng = ltmp
+lst.sort()
+lst.reverse()
+summ = j = ind =  0
+while summ <= ln/2:
+    summ += lst[j]
+    ind = j
+    j+=1
+
+print(f'Количество контигов: {n}')
+print(f'Длина контигов: {ln}')
+print(f'Самый длинный контиг: {lng}')
+print(f'N50: {lst[ind]}')
+```
+Количество контигов: 656
+
+Длина контигов: 3926237
+
+Самый длинный контиг: 225295
+
+N50: 67680
+
+### Скаффолды
+
+```bash
+f = open("Poil_scaffold.fa")
+a = f.readlines()
+n = ln = mx = sm = 0
+lng = a[0].split('len')[1].split('_cov')[0]
+lst = []
+for i in a:
+    if '>' in i:
+        n += 1
+        ln += int(i[i.index('len') + 3:i.index('_cov')])
+        ltmp = int(i[i.index('len') + 3:i.index('_cov')])
+        lst.append(ltmp)
+    for j in i:
+        if j == "N":
+            sm += 1
+lst.sort()
+lst.reverse()
+summ = j = ind =  0
+while summ <= ln/2:
+    summ += lst[j]
+    ind = j
+    j+=1
+
+print(f'Количество скаффолдов: {n}')
+print(f'Длина скаффолдов: {ln}')
+print(f'Самый длинный скаффолд: {lng}')
+print(f'N50: {lst[ind]}')
+print(f'Общая длина гэпов до подрезания: {sm}')
+```
+Количество скаффолдов: 75
+
+Длина скаффолдов: 3871069
+
+Самый длинный скаффолд: 182172
+
+N50: 3650391
+
+Общая длина гэпов до подрезания: 7010
+
+Общая длина гэпов до подрезания: 6851
+
+### Скаффолды после удаления гэпов
+
+```bash
+f = open("Poil_gapClosed.fa")
+a = f.readlines()
+sm = 0
+for i in a:
+    for j in i:
+        if j == "N":
+            sm += 1
+print(f'Общая длина гэпов после подрезания: {sm}')
+```
+Общая длина гэпов после подрезания: 1910
+
+### Количество гэпов для самого длинного скаффолда до подрезания
+
+```bash
+!grep 'N' Poil_scaffold.fa | wc -l
+```
+158
+
+### Количество гэпов для самого длинного скаффолда после подрезания
+
+```bash
+!grep 'N' Poil_gapClosed.fa | wc -l
+```
+34
+
+## Отчеты из Multiqc
+
+##### Такая же история, как и в предыдущем пункте
+##### На вторых графиках нужны зеленая и голубая функции
+
+## для исходных чтений
+![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/imges/Screenshot%20from%202023-10-08%2017-41-38.png)
+![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/imges/fastqc_adapter_content_plot%20(1).png)
+![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/imges/fastqc_per_sequence_quality_scores_plot%20(1).png)
+
+## для урезанных чтений
+![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/imges/Screenshot%20from%202023-10-08%2017-43-13.png)
+![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/imges/fastqc_adapter_content_plot%20(2).png)
+![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/imges/fastqc_per_sequence_quality_scores_plot%20(2).png)

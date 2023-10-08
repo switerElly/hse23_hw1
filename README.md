@@ -192,6 +192,6 @@ print(f'Общая длина гэпов после подрезания: {sm}')
 ## Отчеты из Multiqc
 
 ## для исходных чтений
-
+![Image alt](https://github.com/{username}/{repository}/raw/{branch}/{path}/image.png)
 
 ## для урезанных чтений

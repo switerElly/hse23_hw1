@@ -330,10 +330,10 @@ print(f'Общая длина гэпов после подрезания: {sm}')
 
 ## для исходных чтений
 ![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/img2/Screenshot%20from%202023-10-08%2019-08-09.png)
-![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/imges/fastqc_adapter_content_plot%20(3).png)
+![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/img2/fastqc_adapter_content_plot%20(3).png)
 ![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/imges/fastqc_per_sequence_quality_scores_plot%20(3)png)
 
 ## для урезанных чтений
 ![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/img2/Screenshot%20from%202023-10-08%2019-08-17.png)
-![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/imges/fastqc_adapter_content_plot%20(4).png)
+![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/img2/fastqc_adapter_content_plot%20(4).png)
 ![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/imges/fastqc_per_sequence_quality_scores_plot%20(4).png)

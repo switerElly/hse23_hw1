@@ -337,3 +337,7 @@ print(f'Общая длина гэпов после подрезания: {sm}')
 ![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/img2/Screenshot%20from%202023-10-08%2019-08-17.png)
 ![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/img2/fastqc_adapter_content_plot%20(4).png)
 ![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/img2/fastqc_per_sequence_quality_scores_plot%20(4).png)
+
+## Выводы
+
+#### С уменьшением длины последовательности качество сборки становится хуже - это можно заменить по величине самого длинного скаффолда в первом и втором случае. Более того, количество гэпов тоже увеличивается. В итоге первая сборка показала лучшие результаты 

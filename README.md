@@ -329,7 +329,7 @@ print(f'Общая длина гэпов после подрезания: {sm}')
 ##### На вторых графиках нужны зеленая и голубая функции
 
 ## для исходных чтений
-![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/imges/Screenshot%20from%202023-10-08%2017-41-38.png)
+![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/img2/Screenshot%20from%202023-10-08%2019-08-09.png)
 ![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/imges/fastqc_adapter_content_plot%20(1).png)
 ![Image alt](https://github.com/switerElly/hse23_hw1/blob/main/imges/fastqc_per_sequence_quality_scores_plot%20(1).png)
 
